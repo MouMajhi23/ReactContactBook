@@ -1,0 +1,112 @@
+.container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+  border-radius: 10px;
+  background-color:  rgba(228, 237, 255, 0.943);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  border-radius: 5px;
+  background-color: rgba(206, 218, 244, 0.943);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.profilePic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.options {
+  width: 80%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+
+}
+.options>.item:nth-child(1){
+  color: #4A90E2;
+}
+.options>.item:nth-child(2){
+  color: #e9ab84;
+}
+.options>.item:nth-child(3){
+  color: #e1dca0;
+}
+.options>.item:nth-child(4){
+  color: #94db9f;
+}
+.btn{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.btn>button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding:1%;
+}
+.editBtn {
+  color: #4A90E2; /* Blue for Edit */
+}
+
+.deleteBtn {
+  color: #E74C3C; /* Red for Delete */
+}
+
+
+.btn button:hover {
+  transform: scale(1.5); /* Slight zoom on hover */
+}
+
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  width: 80%;
+  border-radius: 5px;;
+ 
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 1px 2px 3px rgb(170, 197, 249);
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.info>p:first-child{
+  padding-top: 4%;
+  padding-bottom: 6%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info p{
+  padding: 2%;
+}
+  .backButton {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
