@@ -5,7 +5,7 @@ Overview : Hi Everyone, Contact Book is a React-based application that allows us
 
 1)Create Contacts – Adds new contacts with a default image if none is provided.
 
-2) Update & Delete – Modify or remove contacts as needed.
+2)Update & Delete – Modify or remove contacts as needed.
    
 3)Search Functionality – Easily find contacts using a search bar.
 
