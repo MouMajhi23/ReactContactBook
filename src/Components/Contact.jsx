@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 const Contact = () => {
     const { id } = useParams(); // Get ID from URL
     const [contact, setContact] = useState(null);
-     let [reload, setReload] = useState(false);
+     //let [reload, setReload] = useState(false);
      const navigate = useNavigate()
 
     useEffect(() => {
