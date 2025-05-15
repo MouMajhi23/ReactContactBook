@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 const Contact = () => {
     const { id } = useParams(); // Get ID from URL
     const [contact, setContact] = useState(null);
-    //  let [reload, setReload] = useState(false);
+   
      const navigate = useNavigate()
 
     useEffect(() => {
@@ -56,10 +56,10 @@ const Contact = () => {
                 <h2>{contact.name}</h2>
                 <div className={contactDetailsStyle.options}>
 
-                    <a href={`tel:${contact.contact_number}`} className={contactDetailsStyle.item} title='Call' value={contact.contact_number}><FontAwesomeIcon icon={faPhone} size='2x' /></a>
+                    <a href={`tel:${contact.contact_number}`} className={contactDetailsStyle.item} title='Call' ><FontAwesomeIcon icon={faPhone} size='2x' rel="noreferrer" /></a>
                     <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}`}
-                        target="_blank" className={contactDetailsStyle.item} title='Email'><FontAwesomeIcon icon={faEnvelope} size='2x' /></a>
-                    <a href={`sms:${contact.contact_number}`} className={contactDetailsStyle.item} title='Message'><FontAwesomeIcon icon={faMessage} size='2x' /></a>
+                        target="_blank" className={contactDetailsStyle.item} title='Email' rel="noreferrer"><FontAwesomeIcon icon={faEnvelope} size='2x' /></a>
+                    <a href={`sms:${contact.contact_number}`} className={contactDetailsStyle.item} title='Message' rel="noreferrer"><FontAwesomeIcon icon={faMessage} size='2x' /></a>
                     <a href={`https://wa.me/${contact.contact_number}`} target="_blank" rel="noopener noreferrer"
                         className={contactDetailsStyle.item}
                         title="Send WhatsApp Message">
